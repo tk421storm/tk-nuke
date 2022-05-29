@@ -637,8 +637,9 @@ class NukeEngine(sgtk.platform.Engine):
             elif record.levelno >= logging.WARNING:
                 nuke.warning("SG Warning: %s" % msg)
 
-        # Sends the message to the script editor.
-        self.async_execute_in_main_thread(print, msg)
+        # Sends the message to the script editor
+        #NEVER DO THIS.
+        #self.async_execute_in_main_thread(print, msg)
 
     #####################################################################################
     # Panel Support
