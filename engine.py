@@ -627,7 +627,7 @@ class NukeEngine(sgtk.platform.Engine):
             elif record.levelno >= logging.INFO:
                 hiero.core.log.info(msg)
             else:
-                hiero.core.log.setLogLevel(hiero.core.log.kDebug)
+                #hiero.core.log.setLogLevel(hiero.core.log.kDebug)
                 hiero.core.log.debug(msg)
         else:
             if record.levelno >= logging.CRITICAL:
